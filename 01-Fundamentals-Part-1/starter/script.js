@@ -1,4 +1,4 @@
-
+/*
 // let js = "amazing";
 // if (js === "amazing") alert("Javascript is FUN");
 // console.log(40 + 8 + 23 - 10);
@@ -29,5 +29,21 @@ console.log(typeof null);
 // it shows it is an object, but it is a bug that has not been fixed for legacy reasons.
 */
 
+let age = 30;
+age = 31;
 
+//it is perfectly okay to reassign values. It was 30, now it is mutated to 31.
 
+const birthYear = 1991;
+// birthYear = 1990; We are unable to do this because a const cannot be mutated
+// const job; This is not legal. We cannot create empty const variables.
+//It's a good practice to have as little mutating variables as possible. By default, always use const.
+
+//The var keyword is completely not needed. But we should know how it works. It works pretty much the same way as let.
+
+var job = 'programmer';
+job = 'teacher';
+
+lastName = 'Hyseni';
+console.log(lastName);
+//not recommended. Will learn later why.
