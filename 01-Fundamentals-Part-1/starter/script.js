@@ -136,31 +136,52 @@ const BMIJohn = massJohn / (heightJohn * heightJohn);
 const markHigherBMI = BMIMark > BMIJohn;
 console.log(BMIMark, BMIJohn, markHigherBMI);
 
-*/
 
 
 const firstName = 'Pixendrit';
-const job = 'student';
+const job = 'game designer';
 const birthYear = 1997;
+const year = 2037;
 
+const pixendrit = "I'm " + firstName + ', a ' + (year - birthYear) + ' year old ' + job + '!';
+console.log(pixendrit);
 
+const pixendritNew = `I'm ${firstName}, a ${year - birthYear} year old ${job}!`;
+console.log(pixendritNew)
+//template literals are so cool, actually. Using backticks seems more practical than concatenating strings.
+//we can also use backticks for regular strings
 
+console.log(`Just a regular string...`)
 
+console.log('String with \n\
+multiple \n\
+lines')
 
+console.log(`String 
+multiple
+lines`);
 
+//it's a lot cleaner to use template literals
 
+*/
 
+const age = 15;
 
+if (age >= 18) {
+    console.log('Sarah can start driving license 🚗');
+} else {
+    const yearsLeft = 18 - age;
+    console.log(`Sarah is too young. Wait another ${yearsLeft} years :)`)
+}
 
-
-
-
-
-
-
-
-
-
+const birthYear = 2012;
+let century;
+if (birthYear <= 2000) {
+    century = 20;
+} else {
+    century = 21;
+}
+console.log(century)
 
 
 
