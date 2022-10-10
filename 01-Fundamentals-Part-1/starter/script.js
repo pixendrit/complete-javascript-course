@@ -280,7 +280,111 @@ switch (day) {
         console.log('Not a valid day!');
 }
 
-*/
+
+const day = 'thursday';
+
+switch (day) {
+    case "monday": //day === 'monday'
+        console.log('Plan course structure');
+        console.log('Go to meetup');
+        break; //without the break, the code simply continues executing
+    case 'tuesday':
+        console.log('Prepare theory ');
+        break;
+    case 'wednesday':
+    case 'thursday':
+        console.log('Write code examples');
+        break;
+    case 'friday':
+        console.log('Record videos');
+        break;
+    case 'saturday':
+    case 'sunday':
+        console.log('Enjoy the weekend :D');
+        break;
+    default:
+        console.log('Not a valid day!');
+}
+
+
+// The difference between statements and expressions
+// An expression is a piece of code that produces a value
+// 3+4 /  This is an expression
+// 1991 / This is also an expression. Because it will produce a value
+// true && false && !false / also an expression
+
+// A statement does not produce a value.
+
+if (23 > 10) {
+    const str = '23 is bigger';
+}
+//this if statement does not produce a value. Simply performs an action.
+// a statement is like a complete sentence. It's words, might be expressions.
+
+console.log(`I'm ${2037 - 1997} years old`)
+
+ */
+
+// The Conditinal (ternary) operator
+
+const age = 23;
+age >= 18 ? console.log('I like to smoke cigarettes') : console.log(`Nah I'm good`)
+
+// Ternary (three). the condition + the if part + the else part.
+// An operator always produces a value. If we have a value, we can assign that value to a variable.
+
+
+const drink = age >= 18 ? 'wine' : 'water';
+console.log(drink);
+
+let drink2;
+if (age >= 18) {
+    drink2 = 'wine';
+} else {
+    drink2 = 'water';
+}
+
+console.log(drink2);
+
+//This is basically just a way to write less code. Kind of easier. We can also use it inside an expression
+
+console.log(`I like to drink ${age >= 18 ? 'wine' : 'water'}`)
+
+// The ternary is not thought as a complete replacement for an if-else block. Just for shorter stuff like this.
+
+// Coding challenge. Tip calculator
+
+const bill = 275;
+const tip = bill <= 300 && bill >= 50 ? 0.15 * bill : 0.20 * bill;
+
+console.log(`The bill was ${bill}, the tip was ${tip}, and the total value ${bill + tip}`);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
