@@ -189,7 +189,6 @@ console.log(pixendrit);
 const calcAge = function (birthYear) {
     return 2022 - birthYear;
 }
-
 const years = [1990, 1967, 2002, 2010, 2018];
 
 // console.log(calcAge(years)); // NaN
@@ -201,9 +200,43 @@ console.log(age1, age2, age3);
 
 const ages = [calcAge(years[0]), calcAge(years[1]), calcAge(years[years.length-1])];
 console.log(ages)
-
-
  */
+
+//Add elements
+const friends = ['Michael', 'Steven', 'Peter'];
+const newLength = friends.push('Jay'); //add an element at the end of the array
+console.log(friends);
+console.log(newLength);
+
+friends.unshift('John'); // put a new element at the beginning of the array
+console.log(friends);
+
+//Remove elements
+friends.pop(); // Remove dhe last element - Bye Jay
+const popped = friends.pop(); // bye Peter
+console.log(popped);
+console.log(friends);
+
+friends.shift(); //First
+console.log(friends);
+
+console.log(friends.indexOf('Steven')); // the index of an element
+console.log(friends.indexOf('Bob')); // Bob does not exist
+
+friends.push(23);
+console.log(friends.includes('Steven')); // does it exist?
+console.log(friends.includes('Bob')); // does it exist?
+console.log(friends.includes('23')); // does it exist? - it tests strict equality ===
+
+console.log(friends.includes(23)); // does it exist?
+
+if (friends.includes('Steven')){
+    console.log(`You have a friend called Steven`);
+}
+
+
+
+
 
 
 
