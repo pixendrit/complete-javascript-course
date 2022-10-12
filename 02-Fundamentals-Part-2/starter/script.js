@@ -103,7 +103,6 @@ const yearsUntilRetirement = function (birthYear, firstName) {
 
 console.log(yearsUntilRetirement(1991, 'Jonas'));
 console.log(yearsUntilRetirement(1950, 'Mike'));
- */
 // JavaScript Fundamentals – Part 2
 // Coding Challenge #1
 // Back to the two gymnastics teams, the Dolphins and the Koalas! There is a new
@@ -164,16 +163,47 @@ checkWinner(scoreDolphins, scoreKoalas);
 
 
 
+const friend1 = 'Michael';
+const friend2 = 'Steven';
+const friend3 = 'Peter';
+
+const friends = ['Michael', 'Steven', 'Peter'];
+console.log(friends);
+
+console.log(friends[0]);
+console.log(friends[2]);
+
+console.log(friends.length);
+console.log(friends[friends.length - 1]);
 
 
+friends[2] = 'Jay';
+console.log(friends);
+//even though the array is a const, we can change it because it is not primitive data. We cannot replace the entire array though.
+
+const firstName = 'Endrit';
+const pixendrit = [firstName, 'Hyseni', 2022-1997, 'designer', friends];
+console.log(pixendrit);
+
+// Exercise
+const calcAge = function (birthYear) {
+    return 2022 - birthYear;
+}
+
+const years = [1990, 1967, 2002, 2010, 2018];
+
+// console.log(calcAge(years)); // NaN
+const age1 = calcAge(years[0]);
+const age2 = calcAge(years[1]);
+const age3 = calcAge(years[years.length - 1]);
+
+console.log(age1, age2, age3);
+
+const ages = [calcAge(years[0]), calcAge(years[1]), calcAge(years[years.length-1])];
+console.log(ages)
 
 
-
-
-
-
-
-
+ */
 
 
 
