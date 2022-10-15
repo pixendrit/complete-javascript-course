@@ -56,7 +56,7 @@ const calcAge3 = birthYear => 2037 - birthYear;
 const age3 = calcAge3(1991);
 console.log(age3)
 
-// how many years a person has left untill retirement
+// how many years a person has left until retirement
 const yearsUntilRetirement = (birthYear, firstName) => {
     const age = 2037 - birthYear;
     const retirement = 65 - age;
@@ -115,7 +115,7 @@ console.log(yearsUntilRetirement(1950, 'Mike'));
 // 1. Create an arrow function 'calcAverage' to calculate the average of 3 scores
 // 2. Use the function to calculate the average for both teams
 // 3. Create a function 'checkWinner' that takes the average score of each team
-// as parameters ('avgDolhins' and 'avgKoalas'), and then logs the winner
+// as parameters ('avgDolphins' and 'avgKoalas'), and then logs the winner
 // to the console, together with the victory points, according to the rule above.
 // Example: "Koalas win (30 vs. 13)"
 // 4. Use the 'checkWinner' function to determine the winner for both Data 1 and
@@ -281,5 +281,3 @@ console.log(tips[0], tips[1], tips[2]);
 //4
 const total = [tips[0] + bills[0], tips[1] + bills[1], tips[2] + bills[2]];
 console.log(`${total}🫶`);
-
-
