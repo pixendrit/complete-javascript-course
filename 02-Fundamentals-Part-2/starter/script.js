@@ -328,29 +328,29 @@ console.log(`${jonas.firstName} has ${jonas.friends.length} friends and his best
 */
 
 
-const jonas = {
-    firstName: 'Jonas',
-    lastName: 'Schmedtmann',
-    birthYear: 1991,
-    job: 'teacher',
-    friends: ['Michael', 'Peter', 'Steven'],
-    hasDriversLicense: true,
-    /* calcAge: function (birthYear) {  // any function that is attached to an object is called a method
-         return 2037 - birthYear;
-     }
- */
-    /*    calcAge: function () {
-            // console.log(this);
-            return 2037 - this.birthYear;
-        }*/
-    calcAge: function () {
-        this.age = 2037 - this.birthYear;
-        return this.age;
-    },
-    getSummary: function () {
-        return `${this.firstName} is a ${this.calcAge()} year old ${this.job}, and he has ${this.hasDriversLicense ? 'a' : 'no'} driver's license.`
-    }
-};
+// const jonas = {
+//     firstName: 'Jonas',
+//     lastName: 'Schmedtmann',
+//     birthYear: 1991,
+//     job: 'teacher',
+//     friends: ['Michael', 'Peter', 'Steven'],
+//     hasDriversLicense: true,
+//     /* calcAge: function (birthYear) {  // any function that is attached to an object is called a method
+//          return 2037 - birthYear;
+//      }
+//  */
+//     /*    calcAge: function () {
+//             // console.log(this);
+//             return 2037 - this.birthYear;
+//         }*/
+//     calcAge: function () {
+//         this.age = 2037 - this.birthYear;
+//         return this.age;
+//     },
+//     getSummary: function () {
+//         return `${this.firstName} is a ${this.calcAge()} year old ${this.job}, and he has ${this.hasDriversLicense ? 'a' : 'no'} driver's license.`
+//     }
+// };
 /*
  // This is how we used to do it before. this  is a function declaration and it doesn't work inside an object
  const calcAge =  function(birthYear) {
@@ -358,18 +358,18 @@ const jonas = {
     }
 */
 
-console.log(jonas.calcAge());
-
-console.log(jonas.age);
-console.log(jonas.age);
-console.log(jonas.age);
-
-
-// Challenge
-// "Jonas is a 46-year old teacher, and he has a/no driver's license"
-
-console.log(`${jonas.firstName} is a ${jonas.age} year old ${jonas.job}, and he has ${jonas.hasDriversLicense ? 'a' : 'no'} driver's license`);
-console.log(jonas.getSummary());
+// console.log(jonas.calcAge());
+//
+// console.log(jonas.age);
+// console.log(jonas.age);
+// console.log(jonas.age);
+//
+//
+// // Challenge
+// // "Jonas is a 46-year old teacher, and he has a/no driver's license"
+//
+// console.log(`${jonas.firstName} is a ${jonas.age} year old ${jonas.job}, and he has ${jonas.hasDriversLicense ? 'a' : 'no'} driver's license`);
+// console.log(jonas.getSummary());
 
 /*
 Coding Challenge #3
@@ -388,6 +388,7 @@ Test data: Marks weights 78 kg and is 1.69 m tall. John weights 92 kg and is 1.9
 tall.
 GOOD LUCK 😀
 */
+/*
 
 const mark = {
     fullName: 'Mark Miller',
@@ -416,6 +417,84 @@ if (john.BMI > mark.BMI) {
 
     console.log(`${mark.fullName}'s BMI (${mark.BMI}) is higher than ${john.fullName}'s (${john.BMI})!`);
 }
+*/
+
+// Iteration - The for loop
+
+
+// console.log('Lifting weights repetition 1 🏋️');
+// console.log('Lifting weights repetition 2 🏋️');
+// console.log('Lifting weights repetition 3 🏋️');
+// console.log('Lifting weights repetition 4 🏋️');
+// console.log('Lifting weights repetition 5 🏋️');
+// console.log('Lifting weights repetition 6 🏋️');
+// console.log('Lifting weights repetition 7 🏋️');
+// console.log('Lifting weights repetition 8 🏋️');
+// console.log('Lifting weights repetition 9 🏋️');
+// console.log('Lifting weights repetition 10 🏋️');
+
+// for loop keeps running while condition is true
+/*
+for (let rep = 1; rep <= 10; rep++) {
+    console.log(`Lifting weights repetition ${rep} 🏋️`);
+}
+*/
+/*
+
+// looping arrays
+const jonasArray = [
+    'Jonas',
+    'Schmedtmann',
+    2037 - 1991,
+    'teacher',
+    ['Michael', 'Peter', 'Steven'],
+    true
+];
+
+const types = [];
+
+for (let i = 0; i < jonasArray.length; i++) {
+    // Reading from jonas array
+    console.log(jonasArray[i], typeof jonasArray[i])
+
+    // Filling types array
+    /!*    types[i] = typeof jonasArray[i];*!/
+    types.push(typeof jonasArray[i]);
+    //either way works. issa matter of preference
+}
+
+console.log(types);
+
+
+//filling another empty array using an expression
+const years = [1991, 2007, 1969, 2020];
+const ages = [];
+
+for (let i = 0; i < years.length; i++) {
+    ages.push(2037 - years[i]);
+}
+
+console.log(ages);
+
+// continue and break
+console.log('=== ONLY STRINGS ===')
+for (let i = 0; i < jonasArray.length; i++) {
+    if (typeof jonasArray[i] !== 'string') continue; //continue here actually just means skip, as in continue to the other iteration
+    console.log(jonasArray[i], typeof jonasArray[i])
+}
+
+// log no other elements after we found a number
+console.log('=== BREAK WITH NUMBER ===')
+for (let i = 0; i < jonasArray.length; i++) {
+    if (typeof jonasArray[i] === 'number') break;
+    console.log(jonasArray[i], typeof jonasArray[i]);
+}
+
+*/
+
+
+// Looping Backwards and Loops in Loops
+
 
 
 
